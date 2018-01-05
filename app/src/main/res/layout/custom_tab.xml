@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.meeof.meeof.custom.CustomFontTextView
+            app:fontName="@string/font_name_hind_medium"
+            android:textSize="16dp"
+            android:id="@+id/tabContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/usualTextColor"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/badgeCountRl"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="2dp"
+        android:background="@drawable/tabbar_badge_shape">
+
+        <com.meeof.meeof.custom.CustomFontTextView
+            app:fontName="@string/font_name_hind_medium"
+            android:id="@+id/badgeCount"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

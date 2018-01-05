@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/updates"
+        android:title="Updates"
+        android:icon="@drawable/ic_ico_tab_one"/>
+
+    <item android:id="@+id/events"
+        android:title="Events"
+        android:icon="@drawable/ic_ico_tab_two"/>
+
+    <item android:id="@+id/more"
+        android:title="More"
+        android:icon="@drawable/ic_ico_tab_three"/>
+
+    <item  android:id="@+id/notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_ico_tab_four"/>
+
+    <item  android:id="@+id/messages"
+        android:title="Messages"
+        android:icon="@drawable/ic_ico_tab_five"/>
+
+</menu>

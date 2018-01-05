@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:id="@+id/RelativeMapBubble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ImgUserImageButton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/user_profile_icon"/>
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/TxtUserNamePopUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tommy"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:textColor="#799DCB"
+                app:fontName="@string/font_name_hind_medium"
+                android:layout_toRightOf="@+id/ImgUserImageButton"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/TxtAddressMapBubble"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/ic_map_marker"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_name_hind_medium"
+                android:layout_alignStart="@+id/TxtUserNamePopUp"
+                android:layout_below="@+id/TxtUserNamePopUp"
+                android:text="Address"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:maxLines="1"  />
+        </RelativeLayout>
+       <com.meeof.meeof.custom.CustomFontTextView
+           android:id="@+id/TxtDescription"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Bike Event"
+           android:layout_below="@+id/RelativeMapBubble"
+           app:fontName="@string/font_name_hind_medium"
+           android:layout_marginLeft="5dp"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/BtnSeeDetail"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="See Details"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@android:color/darker_gray"-->
+            <!--android:background="@drawable/button_background"-->
+            <!--android:layout_below="@+id/TxtDescription"-->
+            <!--/>-->
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/see_detail_button"
+            android:layout_below="@+id/TxtDescription"/>
+        <!--<ImageView-->
+            <!--android:id="@+id/ImgCloseBubble"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/cancelpopup"-->
+            <!--android:layout_alignParentRight="true" />-->
+    </RelativeLayout>
+</RelativeLayout>

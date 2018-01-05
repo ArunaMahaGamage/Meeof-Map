@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Meeof</string>
+
+    <string name="clientID">246779739300-lk5ufm61jju8sodlgrrgllvu51u21dqe.apps.googleusercontent.com</string>
+    <string name="clientSecret">TXBvjG8uAx9SUJoEO8FmDbqH</string>
+    <string name="facebook_app_id">362795427428713</string>
+    <string name="google_api_map_key">AIzaSyBIzj1esFBbrqDmsqVZNmkkNO8XLSyZkog</string>
+    <string name="splash_text_01">Share - Promote - Discover \n Your neighborhood</string>
+    <string name="splash_text_02">Your neighborhood</string>
+    <string name="font_name_hind_medium">Hind-Medium.ttf</string>
+    <string name="font_name_hind_bold">Hind-Bold.ttf</string>
+    <string name="font_name_hind_light">Hind-Light.ttf</string>
+    <string name="get_started_text_01">#SocialNetwork, #CreateEvent, \n #JoinLikeMinded, #DiscoverGreatDeals, \n #LocationBasedService</string>
+    <string name="get_started_text_02">#JoinLikeMinded, #DiscoverGreatDeals,</string>
+    <string name="get_started_text_03">#LocationBasedService</string>
+    <string name="continue_with_google">Continue with Google+</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="other_options">Other Options</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="font_name_hind_regular">Hind-Regular.ttf</string>
+    <string name="send_code">Send Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="submit">Submit</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="resend_activation_code">Resend Activation Code</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="verification">Verification</string>
+    <string name="forgot_password_txt_02">address below</string>
+    <string name="resend_activation_code_txt_01">Please enter your registered email</string>
+    <string name="resend_activation_code_txt_02">address below to get a new code</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="verifiation_top_text">Enter the activation code</string>
+    <string name="inviteEvent"> <u>to be invited </u> </string>
+    <string name="verify_txt_02">code to JaneDoe@meeof.com</string>
+    <string name="verify_txt_code_to">code to </string>
+    <string name="send">Send</string>
+    <string name="title_activity_terms_conditions">TermsConditionsActivity</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy_heding">Privacy Policy</string>
+    <string name="sign_up_with_email">Other Options</string>
+    <string name="interest_event_successfulno_internet">Please Check Your Internet Connection</string>
+    <string name="invalid_code">Please enter the verification code you received via Email</string>
+    <string name="no_internet">Please Check Your Internet Connection</string>
+    <string name="get_facebook_friends_failed">Could not retrieve facebook friends</string>
+    <string name="get_started_agreement_text">By Signing Up, you are agreeing to the </string>
+    <string name="terms_and_privacy_text"> <u>Terms and Privacy Policy</u>.</string>
+    <string name="terms_of_use_link">https://meeof.com/webtou</string>
+    <string name="privacy_policy_link">https://meeof.com/privacy</string>
+    <string name="event_details">Anyone in your neighbourhood and friends in meeof,can see it.It can be shared freely by anyone</string>
+    <string name="dummy_text">Full-screen dialogs may open additional dialogs, such as pickers, because their design accommodates additional layers of material without significantly increasing the app’s perceived z-depth or visual noise</string>
+
+
+    /////////////Error Messages/////////////////
+
+    <string name="succesfully_logged">Successfully Logged In</string>
+    <string name="profile_edit_failed">Profile Update Failed</string>
+    <string name="profile_update_success">Your Profile Updated Successfully</string>
+    <string name="profile_info_receiving_failed">Profile Information Receiving Failed</string>
+    <string name="profile_picture_update_failed">Profile Picture Update Failed</string>
+    <string name="interest_save_info_failed">Unable To Save Your Interests</string>
+    <string name="invitation_send_failed">Failed To Send Invitaion</string>
+    <string name="permission_request_granted">Permission Granted Failed</string>
+    <string name="email_sent_success">Email Sent Successfully </string>
+    <string name="failed_to_load_images">Failed to Load Images</string>
+    <string name="image_uploaded_successfully">Image Uploaded Successfully</string>
+    <string name="unable_to_load_photos">Unable to Retrieve Photos</string>
+    <string name="ignore_event_successful">Ignore Event Successful</string>
+    <string name="ignore_event_unsucessful">Ignore Event Unsuccessful</string>
+    <string name="interest_event_successful">Interest Event Successful</string>
+    <string name="report_event_successful">Event Successfully Reported</string>
+    <string name="interest_event_unsuccessful">Interest Event Unsuccessful</string>
+    <string name="retport_event_unsuccessful">Report Event Unsuccessful</string>
+    <string name="something_went_wrong_loading_your_events">Something went wrong loading your events</string>
+    <string name="something_went_wrong_loading_your_notifications">Something went wrong loading your notifications</string>
+    <string name="something_went_wrong_loading_events">Something went wrong loading events</string>
+    <string name="filter_applied_successfully">Filter Applied Successfully</string>
+    <string name="unable_to_apply_filter">Unable to Apply Filter</string>
+    <string name="oop_something_went_wrong">We have lost the connection to the server</string>
+
+
+    <string name="invalid_name">Please enter your full name</string>
+    <string name="registration_failed">Registration Failed</string>
+    <string name="email_already_registered">Email has already been taken</string>
+    <string name="non_valid_email">Please enter a valid email</string>
+    <string name="please_enter_valid_emails">Please enter a valid email</string>
+    <string name="email_sent_failed_try_again">Failed to resend activation code. Please try again.</string>
+    <string name="email_sent_failed_to_email">We could not find your email. Enter the email you signed up with.</string>
+    <string name="email_sent_success_verificaion">We have send a new activiation code to </string>
+    <string name="verification_failed">The code does not match our record. Please try again or have a new code send below</string>
+    <string name="invalid_error_messasge_code">The activation code entered does not match our records. Codes are only valid for 60 min.</string>
+
+    <string name="activation_code_resend_failed">Failed to resend activation code. Please try again.</string>
+
+    <string name="interest_category_load_failed">Failed To Load Activity Category List</string>
+    <string name="activity_requst_failed">There was a problem submitting your request. Please try again</string>
+    <string name="activity_requst_editext_empty">Please enter the new activity you wish to create</string>
+    <string name="category_requst_editext_empty">Please enter the new category you wish to create</string>
+    <string name="category_list_load_failed">Failed To Load Activity Category List</string>
+    <string name="interests_search_failed">We ran into a problem searching the interests. Please try again</string>
+
+    <string name="facebook_login_failed">Facebook login failed. Please try again</string>
+    <string name="google_login_failed">Google login failed. Please try again</string>
+    <string name="login_failed">Login failed. Please try again</string>
+
+    <string name="Potential_friends_load_failed">failed to load people you might know</string>
+    <string name="friend_request_failed">Error sending a friend request. Please try again</string>
+    <string name="friend_search_failed">Unable to search friends now. Something went wrong.</string>
+    <string name="facebook_friend_invite_failed">Unable to invite Facebook friend. Something went wrong</string>
+    <string name="friend_added_failed">Friend request was not successful. Please try again</string>
+    <string name="friend_list_load_failed">We ran into a problem loading your friends. Please try again</string>
+    <string name="unable_to_retrive_friends">Something went wrong, can\'t load the friends</string>
+    <string name="successfully_added_as_friend">Friend request has been send</string>
+    <string name="Friend_deleted">Friend deleted</string>
+    <string name="Friend_deleted_failed">Failed to delete friend</string>
+    <string name="successfully_invited_as_friend">Friend request has been send</string>
+    <string name="successfully_accepted_as_friend">Friend request was approved</string>
+    <string name="successfully_declined_friend">Friend request was removed</string>
+    <string name="friend_request_accept_decline_failed">Something went wrong capturing your response. Please try again</string>
+
+    <string name="account_delete_failed">Something went wrong deleting your account.</string>
+    <string name="profile_data_load_failed">Unable to load users details</string>
+    <string name="image_upload_failed">Uploading image failed</string>
+    <string name="country_list_load_failed">Failed to load the list of countries</string>
+
+    <string name="password_change_failed">Failed to change your password. Please try again</string>
+    <string name="password_changed_success">Your password has been changed</string>
+    <string name="non_valid_password">Please enter a password</string>
+    <string name="min_charcter_password">Password is not meeting the requirement on min 6 characters</string>
+    <string name="please_enter_your_new_password">Please enter new password</string>
+    <string name="please_enter_your_existing_password">Please enter current password</string>
+    <string name="password_mismatch">Your passwords are not matching</string>
+    <string name="password_cannot_be_changed_for_social_users">Failed to change your password. Facebook and Google login passwords cannot be changed.</string>
+
+    <string name="event_invitations_sent">Invitations has been send to all participants</string>
+    <string name="event_cancel_successfully">Your event has been cancelled. Participants have been notified.</string>
+    <string name="event_cancel_failed">Unable to cancel your event. Please try again</string>
+    <string name="unable_to_invite_friends_to_event">Unable to send the invitation at this moment. Please try again</string>
+    <string name="could_not_send_event_invitations">Unable to send the invitation at this moment. Please try again</string>
+    <string name="event_copy_failed">Somethingg went wrong copying your event. Please try again</string>
+    <string name="event_copy_successfully">Event Copied Successfully</string>
+    <string name="copy_event_sucessful">Copy Event Successful</string>
+    <string name="copy_event_unsucessful">Somethingg went wrong copying your event. Please try again</string>
+    <string name="event_delete_failed">Unable to delete your event. Please try again</string>
+    <string name="event_delete_successfully">Your event has been deleted successfully. Participants have been notified.</string>
+    <string name="unable_to_retrieve_event_details">Something went wrong, can\'t load the event </string>
+    <string name="unable_to_retrieve_notifications_details">Something went wrong, can\'t load the notifications </string>
+    <string name="notification_delete_failed">Unable to delete your notification. Please try again</string>
+    <string name="notification_delete_successfully">Your notification has been deleted successfully.</string>
+    <string name="update_delete_failed">Unable to delete your update. Please try again</string>
+    <string name="update_delete_successfully">Your update has been deleted successfully.</string>
+
+    /////////
+
+    <string name="account_deleted_success">Account Deleted Successfully</string>
+    <string name="successfully_invited_as_friend_to">Invitation Sent to</string>
+    <string name="event_created_successfully">Event Created Successfully</string>
+    <string name="update_created_successfully">Update Created Successfully</string>
+    <string name="update_updated_successfully">Update Edited Successfully</string>
+    <string name="failed_to_create_event">Failed to Create Event</string>
+    <string name="failed_to_update_event">Failed to Edit Event</string>
+    <string name="failed_to_create_update">Failed to Create Update</string>
+    <string name="you_should_invite_at_least_one">Please Invite atleast One Friend for the Event</string>
+    <string name="please_enter_your_comment">please Enter Your Comment</string>
+    <string name="forgot_password_txt_01">Please enter your registered email</string>
+    <string name="verifiation_bottom_text">sent to your email</string>
+    <string name="google_place_id_failed">Could not retrieve place id</string>
+    <string name="google_place_failed">Could not retrieve places</string>
+    <string name="verify_txt_01">We Have Sent an Email With the Verification</string>
+
+
+    <string name="did_not_capture_RSVP">We did not capture your RSVP. Please try again</string>
+    <string name="RSVP_captured">Your RSVP was captured</string>
+    <string name="error_loading_RSVPlist">Something went wrong loading the RSVP list. Please try again</string>
+
+    <string name="new_category_sucess">Thank you. We will look into it and get back to you.</string>
+    <string name="unable_to_delete_event">Unable to Delete Event</string>
+    <string name="unable_to_retrieve_address_line_from_this_location">Unable to Retreive Address Line from this Location</string>
+    <string name="all_invitations_sent">All invitation have been send successfully</string>
+    <string name="there_are_people_in_your_to_be_invited">There are people in your \n \"To Be Invited\"</string>
+    <string name="there_are_unsaved_interests">There are unsaved interests"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

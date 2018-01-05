@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/TempView"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:background="#00aeef"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearDate"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.meeof.meeof.custom.CustomFontTextView
+            android:id="@+id/TxtDate"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="19"
+            app:fontName="@string/font_name_hind_medium"
+            android:textColor="#a7a6a6"
+            android:textSize="22sp"
+            android:gravity="center" />
+
+        <com.meeof.meeof.custom.CustomFontTextView
+            android:id="@+id/TxtMonth"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="JAN"
+            app:fontName="@string/font_name_hind_medium"
+            android:textColor="#2f76a8"
+            android:textSize="22sp"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.meeof.meeof.custom.CustomFontTextView
+            android:id="@+id/TxtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Water Rafting Festival"
+            app:fontName="@string/font_name_hind_medium"
+            android:layout_marginTop="5dp"
+            android:textColor="#585858"/>
+        <com.meeof.meeof.custom.CustomFontTextView
+            android:id="@+id/TxtAddress"
+            android:layout_width="match_parent"
+            app:fontName="@string/font_name_hind_medium"
+            android:layout_height="wrap_content"
+            android:text="Sentos Island,Beach Resort"
+            android:layout_marginTop="5dp"
+            android:textColor="#727272"/>
+
+        <com.meeof.meeof.custom.CustomFontTextView
+            android:id="@+id/TxtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_name_hind_medium"
+            android:text="May Be Going"
+            android:layout_marginTop="5dp"
+            android:textColor="#2f76a8"/>
+    </LinearLayout>
+
+</LinearLayout>

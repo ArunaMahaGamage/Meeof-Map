@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/imageTintLl"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:background="@color/headerMainColor"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/userImageBackgroundIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ico_activities_you_interested3_07" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/headerMainColorTp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/dummyRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/toolbar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/backLlBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/back_button"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/whiteColor"
+                                app:srcCompat="@drawable/btn_nav_back" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:gravity="center">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Event Details"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18dp"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mapLlBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:gravity="center">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/btn_event_map" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_below="@+id/dummyRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.3"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.25"
+                                android:gravity="center">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/hostProfilePicIv"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/img_avatar_00" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.75"
+                                android:gravity="bottom"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom">
+
+                                    <com.meeof.meeof.custom.CustomFontTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Hosted by"
+                                        android:textColor="@color/whiteColor"
+                                        android:textSize="12dp"
+                                        app:fontName="@string/font_name_hind_medium" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="top">
+
+                                    <com.meeof.meeof.custom.CustomFontTextView
+                                        android:id="@+id/eventHostNameTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tommy Gotfredsen"
+                                        android:textColor="@color/whiteColor"
+                                        android:textSize="14dp"
+                                        app:fontName="@string/font_name_hind_medium" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.7">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/eventPosterIv"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:src="@drawable/img_picture2" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/moreCommentsLikesLlBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/seeAllCommentsLikesLlBtn"
+                        android:layout_weight="0.75"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/moreCommentsLlBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/commentLlBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ico_comment" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/noOfCommentTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5"
+                                    android:textSize="16dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Comments"
+                                    android:textSize="16dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/lightGreyColor"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/moreLikesLlBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/noOfLikesTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="104"
+                                    android:textSize="16dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/customFontTextView7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Likes"
+                                    android:textSize="16dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/likeLlBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/likeBtnIv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ico_event_like_normal" />
+
+                        <!--@drawable/ico_event_like_active"-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGreyColor"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.meeof.meeof.custom.CustomFontTextView
+                            android:id="@+id/eventNameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Biking@Marina Bay"
+                            android:textColor="@color/darkBrown"
+                            android:textSize="16dp"
+                            app:fontName="@string/font_name_hind_medium" />
+
+                        <com.meeof.meeof.custom.CustomFontTextView
+                            android:id="@+id/eventAudienceTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="(Public)"
+                            android:textColor="@color/darkBrown"
+                            android:textSize="14dp"
+                            app:fontName="@string/font_name_hind_medium" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/moreLlBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/moreIv"
+                            android:layout_width="20dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/ico_event_more" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:background="@drawable/profile_view_button"
+                        android:gravity="center"
+                        android:textColor="@color/whiteColor">
+
+                        <com.meeof.meeof.custom.CustomFontTextView
+                            android:id="@+id/eventActivityTypeTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:text="Sports/Activities"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="12dp"
+                            app:fontName="@string/font_name_hind_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+
+                        <com.meeof.meeof.custom.CustomFontTextView
+                            android:id="@+id/eventActivityTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Badminton is a sports"
+                            android:textColor="@color/darkGreyText"
+                            android:textSize="12dp"
+                            app:fontName="@string/font_name_hind_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@color/lightGreyColor"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:gravity="center_horizontal">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/eventDateTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="18"
+                                android:textColor="@color/lightBrownColor"
+                                android:textSize="30dp"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:gravity="center_horizontal">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/eventMonthTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Dec"
+                                android:textColor="@color/darkblue"
+                                android:textSize="28dp"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"></LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3.5"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/eventHostTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Host"
+                                android:textColor="@color/darkGreyText"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="/"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/eventStatusTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Event is Over"
+                                android:textColor="@color/red"
+                                app:fontName="@string/font_name_hind_medium" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/eventPlaceNameLl"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ico_event_location" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:gravity="center_vertical">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/eventPlaceNameTv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sentosa Island/ Beach resort"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/eventLocationLl"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/eventLocationTv"
+                                    android:layout_weight="0.9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Event location"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/eventDetailedAddressLl"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/eventDetailedAddressTv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="This is the detailed address"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ico_eventnew_time" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:gravity="center_vertical">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/eventTotalDateTv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="18 January @ 9.30 a.m"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/publicPrivateIv"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ico_eventnew_public_normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.17"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/eventAudienceTv2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Public:"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.72"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/eventAudienceDetailsTv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="9dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ico_eventnew_time" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/noInvitedPplTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="/"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:id="@+id/noMaxAttendeesTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9"
+                                    android:textColor="@color/darkGreyText"
+                                    android:textSize="14dp"
+                                    app:fontName="@string/font_name_hind_medium" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="About"
+                        android:textColor="@color/darkGreyText"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/eventDetailsTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:maxLines="3"
+                        android:text="@string/dummy_text"
+                        android:textColor="@color/darkGreyText"
+                        android:textSize="12dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightGreyColor"></LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="RSVP"
+                                android:textSize="14dp"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="Invited"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/going_people1_imageView"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/img_avatar_00" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/going_people2_imageView"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_toRightOf="@+id/going_people1_imageView"
+                            android:src="@drawable/img_avatar_01" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/going_people3_imageView"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_toRightOf="@+id/going_people2_imageView"
+                            android:src="@drawable/img_avatar_02" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/going_people3_imageView"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/plusForGoingTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="+" />
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/goingNumberTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="15" />
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/areGoingTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="are going" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.28"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/invitedDetailsLlBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/square_button_style"
+                            android:backgroundTint="@color/darkGreen"
+                            android:gravity="center">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:id="@+id/moreDetailsTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="More Details"
+                                android:textColor="@color/darkGreen"
+                                android:textSize="12dp"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"></LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eventRequestsLl"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="0.3"
+                    android:background="@color/lightGreyColor">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:text="Request to join your event"
+                        android:textColor="@color/darkGreyText"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/lightGreyColor">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/eventRequestRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorLightPrimaryBackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Manage Event"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/inviteBtnLl"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_event_detail"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="bottom"
+                                    android:src="@drawable/ic_action_invite_friend" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Invite"
+                                    android:textColor="@color/whiteColor"
+                                    android:textSize="12dp"
+                                    android:tint="@color/whiteColor"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/editBtnLl"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_event_detail"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="bottom"
+                                    android:src="@drawable/ico_eventfilter_loc_edit"
+                                    android:tint="@color/whiteColor" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Edit"
+                                    android:textColor="@color/whiteColor"
+                                    android:textSize="12dp"
+                                    android:tint="@color/whiteColor"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/copyBtnLl"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_event_detail"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="bottom"
+                                    android:src="@drawable/copy"
+                                    android:tint="@color/whiteColor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Copy"
+                                    android:textColor="@color/whiteColor"
+                                    android:textSize="12dp"
+                                    android:tint="@color/whiteColor"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/newEventBtnLl"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_event_detail"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_gravity="bottom"
+                                    android:src="@drawable/plus_symbol"
+                                    android:tint="@color/whiteColor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="New Event"
+                                    android:textColor="@color/whiteColor"
+                                    android:textSize="12dp"
+                                    android:tint="@color/whiteColor"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/cancelBtnLl"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_event_detail"
+                            android:backgroundTint="@color/red"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom"
+                                    android:src="@drawable/cancel"
+                                    android:tint="@color/whiteColor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cancel"
+                                    android:textColor="@color/whiteColor"
+                                    android:textSize="12dp"
+                                    android:tint="@color/whiteColor"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/deleteBtnLl"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_event_detail"
+                            android:backgroundTint="@color/red"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom"
+                                    android:src="@drawable/ico_delete"
+                                    android:tint="@color/whiteColor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.meeof.meeof.custom.CustomFontTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Delete"
+                                    android:textColor="@color/whiteColor"
+                                    android:textSize="12dp"
+                                    android:tint="@color/whiteColor"
+                                    app:fontName="@string/font_name_hind_medium" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addPhotosLlBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cameraIv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ico_event_camera"
+                    android:tint="@color/darkGreyText">
+
+                </ImageView>
+
+                <com.meeof.meeof.custom.CustomFontTextView
+                    android:id="@+id/customFontTextView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add photos"
+                    android:textColor="@color/darkGreyText"
+                    android:textSize="13dp"
+                    app:fontName="@string/font_name_hind_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/photosRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

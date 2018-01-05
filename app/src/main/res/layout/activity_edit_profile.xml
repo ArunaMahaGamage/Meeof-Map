@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/toolbar_gradient_background"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/backAcIvBtn"
+                android:layout_width="45dp"
+                android:backgroundTint="@color/whiteColor"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="6dp"
+                app:srcCompat="@drawable/btn_nav_back" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="Edit Your Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/saveTvBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/user_profile_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/whiteColor">
+
+
+        <LinearLayout
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="Upload Image"
+                android:textColor="@color/usualTextColor"
+                android:textSize="12dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <com.meeof.meeof.custom.CustomFontTextView
+                            android:id="@+id/loadFromTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Load from"
+                            android:textColor="@color/usualTextColor"
+                            android:textSize="11dp"
+                            app:fontName="@string/font_name_hind_medium" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/facebookPictureLlBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp">
+
+                        <ImageView
+                            android:id="@+id/facebook_imageView"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/btn_profile_edit_facebook" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/googlePictureBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/google_imageView"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/btn_profile_edit_google" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/uploadFromGaleryLlBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.42"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profilePhotoIv"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ico_profile_edit_avatar" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cameraOpenLlBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/camera_imageView"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:srcCompat="@drawable/btn_profile_edit_camera" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/cropLlBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/crop_imageView"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:srcCompat="@drawable/btn_profile_edit_crop" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/deletePhotoLlBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/recycle_imageView"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:srcCompat="@drawable/ico_delete" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="Name"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <EditText
+                        android:id="@+id/editNameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_style"
+                        android:fontFamily="@string/font_name_hind_medium"
+                        android:hint="Jone Doe"
+                        android:nextFocusLeft="@id/editNameET"
+                        android:nextFocusUp="@id/editNameET"
+                        android:textColor="@color/darkBrown"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="Email"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <EditText
+                        android:id="@+id/changeEmailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:fontFamily="@string/font_name_hind_medium"
+                        android:background="@drawable/edit_text_style"
+                        android:hint="janedoe@meeof.com"
+                        android:nextFocusLeft="@id/changeEmailET"
+                        android:nextFocusUp="@id/changeEmailET"
+                        android:textColor="@color/darkBrown"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="Country"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/selectCountryTV"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:hint="Enter your Country"
+                        android:textColor="@color/darkBrown"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="Home Address / Nearby Landmark"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/addressET"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_text_style"
+                        android:drawableRight="@drawable/ico_profile_edit_location"
+                        android:ellipsize="end"
+                        android:hint="Enter your location"
+                        android:maxLines="1"
+                        android:textColor="@color/darkBrown"
+                        android:textSize="16dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mapFragment"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    class="com.meeof.meeof.fragment.CustomMapFragment"/>
+
+                <RelativeLayout
+                    android:id="@+id/emptyMapll"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/lightGreyColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gender"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/maleLlBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_view_button_unselected"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp">
+
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+
+                        android:id="@+id/maleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="@drawable/check_btn_font"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/femaleLlBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_view_button_unselected"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/femaleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="@drawable/check_btn_font"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matrix"
+                        android:textSize="14dp"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kmLlBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_view_button_unselected"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/kmTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KM"
+                        android:textColor="@drawable/check_btn_font"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/milesLlBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_view_button_unselected"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/milesTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Miles"
+                        android:textColor="@drawable/check_btn_font"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.meeof.meeof.custom.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Acceptable Distance"
+                    android:textSize="11dp"
+                    app:fontName="@string/font_name_hind_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.83">
+
+                        <SeekBar
+                            android:id="@+id/distanceSB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="15"
+                            android:min="1"
+                            android:progress="5"
+                            android:progressTint="@color/brightBlue"
+                            android:thumb="@drawable/thumb_image_with_shadow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:gravity="right"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.17">
+
+                        <com.meeof.meeof.custom.CustomFontTextView
+                            android:id="@+id/distanceTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="60 Miles"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

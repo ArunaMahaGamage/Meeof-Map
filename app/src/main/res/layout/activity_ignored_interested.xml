@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/whiteColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/toolbar_gradient_background"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/backAcIvBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="6dp"
+                    app:srcCompat="@drawable/btn_nav_back" />
+
+                <com.meeof.meeof.custom.CustomFontTextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Ignored/Interested Events"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:fontName="@string/font_name_hind_medium" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/editDoneBtnLl"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit/Done"
+                android:textColor="@color/headerMainColor"
+                android:textSize="16dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ignoredInterestedEventsRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:id="@+id/noIgnoredEventsViewLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=":)"
+                android:textAlignment="center"
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You Have not Ignored any events"
+                android:textAlignment="center"
+                app:fontName="@string/font_name_hind_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noInterestedEventsViewLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=":("
+                android:textAlignment="center"
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You Have not clicked Interested on any events yet"
+                android:textAlignment="center"
+                app:fontName="@string/font_name_hind_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "246779739300",
+    "firebase_url": "https://meeof-1141.firebaseio.com",
+    "project_id": "meeof-1141",
+    "storage_bucket": "meeof-1141.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246779739300:android:dde24410da8db602",
+        "android_client_info": {
+          "package_name": "com.meeof.meeof"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246779739300-lk5ufm61jju8sodlgrrgllvu51u21dqe.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "246779739300-039t336eljn5dhlm3cie1pd3utqej0m1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meeof.meeof",
+            "certificate_hash": "7c68c4a113a7b0f4272c291933b4bb0cec489e3d"
+          }
+        },
+        {
+          "client_id": "246779739300-5bg1j0vc96l9ai7ek5jt7k7j2ee91p60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLD2Noy-kS8JtA-PH3TytLSJS7E4WSH4E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246779739300-6ihkun1485vgraap2dpgulsqndcroi3t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.meeof.meeof"
+              }
+            },
+            {
+              "client_id": "246779739300-lk5ufm61jju8sodlgrrgllvu51u21dqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

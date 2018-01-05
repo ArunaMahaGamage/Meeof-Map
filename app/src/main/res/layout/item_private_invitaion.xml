@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/buttonColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/privateInvitationLl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/buttonColor"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85">
+
+                <com.meeof.meeof.custom.CustomFontTextView
+                    android:id="@+id/privateEventTitleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="James 12 Birthday Celebration"
+                    android:textColor="@color/colorDarkPrimaryBackground"
+                    android:textSize="17dp"
+                    app:fontName="@string/font_name_hind_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moreLlPrivateBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:gravity="center">
+
+                <ImageView
+
+                    android:id="@+id/moreIv"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ico_event_more"
+                    android:tint="@color/whiteColor" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/privateInvitationIv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img_avatar_02" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By :"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14dp" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/privateHostNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tommy Gotfredsen"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/ico_event_location"
+                        android:tint="@color/whiteColor" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/privateLocationlocationTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Sentosa Island,Beach Resort"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/PrivateDateTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal">
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/privateMonthTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jan"
+                        android:textColor="@color/colorDarkPrimaryBackground"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

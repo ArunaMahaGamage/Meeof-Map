@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/updates"
+        icon="@drawable/ic_ico_tab_one"
+        title="Updates" />
+    <tab
+        id="@+id/events"
+        icon="@drawable/ic_ico_tab_two"
+        title="Events" />
+    <tab
+        id="@+id/more"
+        icon="@drawable/ic_ico_tab_three"
+        title="" />
+    <tab
+        id="@+id/notifications"
+        icon="@drawable/ic_ico_tab_four"
+        title="Notifications" />
+
+    <tab
+        id="@+id/messages"
+        icon="@drawable/ic_ico_tab_five"
+        title="Messages" />
+</tabs>

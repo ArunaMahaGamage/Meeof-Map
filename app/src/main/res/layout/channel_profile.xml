@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/RelativeHeader"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/img_picture2"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#66000000"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/ToolBarChannelProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:background="@android:color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ImgBackFromChannelProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_nav_back"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mee Off Pvt. Ltd"
+                        android:layout_toRightOf="@+id/ImgBackFromChannelProfile"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/TxtMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="map"
+                        android:textColor="@android:color/white"
+                        android:drawableTop="@drawable/ic_map"/>
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImgProfileImageChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ToolBarChannelProfile"
+                android:src="@drawable/img_avatar_00"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/FollowersPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:layout_above="@+id/FollowersTxt"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/FollowersTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImgProfileImageChannel"
+                android:layout_alignParentEnd="true"
+                android:text="1015"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="#9ca7f1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:background="@drawable/backgroundprofile">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ImgFollowUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_wifi_signal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:text="Follow Us"
+                        android:layout_below="@+id/ImgFollowUs"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ImgPrivateMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_communication"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:text="Private Message"
+                        android:layout_below="@+id/ImgPrivateMsg"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ImgMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_more_button"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:text="More"
+                        android:layout_below="@+id/ImgMore"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LinearChannels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RelativeHeader"
+            android:background="#82909a"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TxtChannelEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="Channel Events"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_calender"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_play_arrow"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/TxtChannelUpdates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="Channel Events"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_home_icon"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_play_arrow"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/TxtOffersAndPromotions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="Channel Updates"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_american_dollar_symbol"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_play_arrow"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/TxtAffiliations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="Affiliations"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_handshake"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_play_arrow"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/TxtPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="Photos"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_photo_camera"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_play_arrow"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/BtnManageChannelOnWeb"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearChannels"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="#f7941d"
+            android:layout_gravity="center_horizontal"
+            android:text="Manage channel on web"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/ImgUserImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_avatar_00" />
+
+                <TextView
+                    android:id="@+id/CompanyNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/ImgUserImage"
+                    android:text="Mee off Pvt. Ltd"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CompanyNameTxt"
+                    android:layout_toRightOf="@id/ImgUserImage"
+                    android:layout_marginLeft="5dp"
+                    android:text="Organization" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Hello ALl....."
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="3"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

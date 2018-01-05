@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/RelativeNearMeChannel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImgChannelItem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img_avatar_00"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/ImgChannelItem">
+
+        <com.meeof.meeof.custom.CustomFontTextView
+            android:id="@+id/TxtChannelNameItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_name_hind_medium"
+            android:textColor="#585858"
+            android:text="MeeOff Channel" />
+        
+        <com.meeof.meeof.custom.CustomFontTextView
+            android:id="@+id/TxtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_name_hind_medium"
+            android:text="Description"
+            android:textColor="#585858"
+            android:layout_below="@+id/TxtChannelNameItem"/>
+    </RelativeLayout>
+</RelativeLayout>

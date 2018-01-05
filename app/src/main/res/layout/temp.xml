@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/goingHostLl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/eventStatusTv"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Event is Over"
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/rsvpTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="RSVP :"
+                android:visibility="gone"
+                android:textSize="14dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/goingStatusTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="Going"
+                android:textColor="@color/darkGreen"
+                android:textSize="14dp"
+
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/slashTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="/"
+
+                android:textSize="14dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/hostTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="/ HOST"
+                android:textSize="14dp"
+                android:visibility="gone"
+                app:fontName="@string/font_name_hind_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:gravity="center">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/commentNoTvEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5"
+                android:textSize="15dp"
+                app:fontName="@string/font_name_hind_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/commentLableTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textSize="15sp"
+                app:fontName="@string/font_name_hind_medium" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="5dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="."-->
+        <!--android:textSize="15dp" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:layout_marginLeft="5dp">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/likesNoTvEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="104"
+                android:textSize="15dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/event_like_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Likes"
+                android:textSize="15dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/likeLlBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/likeIv"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_event_like_normal" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

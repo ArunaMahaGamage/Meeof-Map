@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteColor"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_background_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/expandable_item"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/checkMarkDeselectedIv"
+                android:src="@drawable/blue_color_main_category_unselected"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <ImageView
+                android:id="@+id/checkMarkSelectedIv"
+                android:src="@drawable/new_blue_color_category_selected"
+                android:visibility="gone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.89">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                app:fontName="@string/font_name_hind_medium"
+                android:id="@+id/dummy_txt_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="In the Air"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1">
+
+            <ImageView
+                android:id="@+id/drop_down_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

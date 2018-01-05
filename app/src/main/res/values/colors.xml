@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#143349</color>
+    <color name="colorAccent">#5f798b</color>
+    <color name="buttonColor">#5f798b</color>
+    <color name="colorPrimaryBackground">#5f798b</color>
+    <color name="headerMainColor">#204967</color>
+    <color name="headerMainDarkColor">#143349</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="lightGreyColor">#f0f0f0</color>
+    <color name="darkGreyColor">#7c7c7c</color>
+    <color name="blackColor">#111111</color>
+    <color name="brightBlue">#3495DC</color>
+    <color name="tabActiveColor">#228BD9</color>
+    <color name="lightGreyTextHintColor">#acacac</color>
+    <color name="transparent">#00000000</color>
+    <color name="interstGreen">#00B457</color>
+    <color name="switchGreen">#4CD864</color>
+    <color name="usualTextColor">#808080</color>
+    <color name="editTextColor">#4f4f4f</color>
+    <color name="darkBrown">#434343</color>
+
+    <color name="darkGreen">#4C8C5F</color>
+    <color name="colorLightPrimaryBackground">#7d9fb7</color>
+    <color name="lightBrownColor">#7c7c7c</color>
+    <color name="darkblue">#2F76A8</color>
+    <color name="LightBrown">#C8AB55</color>
+
+    <color name="darkGreyText">#727272</color>
+    <color name="blackblue">#2E3192</color>
+    <color name="eventGreen">#A0B5A8</color>
+    <color name="editTextborder">#CDCDCD</color>
+    <color name="yellow">#B79428</color>
+
+    <color name="colorDarkPrimaryBackground">#2e404d</color>
+    <color name="eventItemUnderline">#CCCCCC</color>
+    <color name="light_grey">#a7a7a7</color>
+    <color name="interstBlue_sports_activities">#00AFC8</color>
+    <color name="interstGreen_board_games">#00B457</color>
+    <color name="interstRed_creative_corner">#CD0101</color>
+    <color name="interstPurple_gaming">#5B00A1</color>
+    <color name="interstRose_going_out">#E0026A</color>
+    <color name="interstOrange_parks">#F45600</color>
+    <color name="red">#ff0000</color>
+    <color name="shadowColor">#f6f6f6</color>
+    <color name="headerMainColorTp">#80143349</color>
+    <color name="opaque_back">#29000000</color>
+
+    <color name="bottom_bar_active_icon_color">#0055ff</color>
+    <color name="bottom_bar_active_text_color">#216bff</color>
+
+</resources>

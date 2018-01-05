@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimaryBackground"
+    tools:context="com.meeof.meeof.activity.SplashActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/meeofImg"
+                android:src="@drawable/spalsh_screen_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/text01"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_text_01"
+                app:fontName="@string/font_name_hind_medium"
+                android:textColor="@color/whiteColor"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/text02"
+                android:visibility="gone"
+                android:layout_below="@+id/text01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_text_02"
+                app:fontName="@string/font_name_hind_medium"
+                android:textColor="@color/whiteColor"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <ImageView
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/meeoflogo"
+                android:layout_height="15dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

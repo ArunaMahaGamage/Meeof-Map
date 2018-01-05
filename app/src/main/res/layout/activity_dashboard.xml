@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:background="@color/whiteColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <FrameLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/mainContainer"
+        android:layout_above="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteColor" />
+
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteColor"
+        app:itemIconTint="@color/darkGreyColor"
+        app:itemTextColor="@color/tabActiveColor"
+        app:menu="@menu/bottom_bar_menu_item" />
+
+    <!--<com.roughike.bottombar.BottomBar-->
+    <!--android:id="@+id/bottomBar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/whiteColor"-->
+    <!--app:bb_inActiveTabColor="@color/darkGreyColor"-->
+    <!--app:bb_activeTabColor="@color/tabActiveColor"-->
+    <!--app:bb_tabXmlResource="@xml/bottom_nav_menu" />-->
+
+    <!--<com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx-->
+    <!--android:id="@+id/bnve"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/whiteColor"-->
+    <!--app:itemIconTint="@color/darkGreyColor"-->
+    <!--app:itemTextColor="@color/darkGreyColor"-->
+    <!--app:menu="@menu/menu_navigation_with_view_pager" />-->
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+    <!--android:id="@+id/bottom_navigation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--app:itemBackground="@color/whiteColor"-->
+    <!--app:itemIconTint="@color/bottom_nav_tab_color"-->
+    <!--app:itemTextColor="@color/bottom_nav_tab_color"-->
+    <!--app:menu="@menu/bottom_navigation_main" />-->
+
+</RelativeLayout>

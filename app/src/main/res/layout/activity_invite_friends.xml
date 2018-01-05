@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/toolbar_gradient_background"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/backAcIvBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="6dp"
+                    app:srcCompat="@drawable/btn_nav_back" />
+
+                <com.meeof.meeof.custom.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="Find/ Invite Friends"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    app:fontName="@string/font_name_hind_medium" />
+
+                <com.meeof.meeof.custom.CustomFontTextView
+                    android:id="@+id/doneTvBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15dp"
+                    android:text="Save"
+                    android:visibility="gone"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:id="@+id/facebook_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/facebookFriendsIvBtn"
+                        android:layout_width="63dp"
+                        android:layout_height="63dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_button_deselected"
+                        android:src="@drawable/btn_friends_facebook" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/fbfriendsTopTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Facebook"
+                        android:textAlignment="center"
+                        android:textColor="#8A8A8A"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/fbfriendsBottomTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Friends"
+                        android:textAlignment="center"
+                        android:textColor="#8A8A8A"
+                        app:fontName="@string/font_name_hind_medium" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goolge_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/googleFriendsIvBtn"
+                        android:layout_width="63dp"
+                        android:layout_height="63dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_button_deselected"
+                        android:src="@drawable/btn_friends_google" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/gfriendsTopTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Google+"
+                        android:textAlignment="center"
+                        android:textColor="#8A8A8A"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/gfriendsBottomTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Friends"
+                        android:textAlignment="center"
+                        android:textColor="#8A8A8A"
+                        app:fontName="@string/font_name_hind_medium" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contact_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/contactsFriendsIvBtn"
+                        android:layout_width="63dp"
+                        android:layout_height="63dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_button_deselected"
+                        android:src="@drawable/btn_friends_contact" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/mobileContactsTopTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Mobile"
+                        android:textAlignment="center"
+                        android:textColor="#8A8A8A"
+                        app:fontName="@string/font_name_hind_medium" />
+
+                    <com.meeof.meeof.custom.CustomFontTextView
+                        android:id="@+id/mobileContactsBottomTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Contacts"
+                        android:textAlignment="center"
+                        android:textColor="#8A8A8A"
+                        app:fontName="@string/font_name_hind_medium" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGreyColor" />
+
+        <LinearLayout
+            android:id="@+id/friends_searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_search_bar"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_activity_search" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="9"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Search result"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGreyColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loopup result from"
+                android:textSize="14dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+            <com.meeof.meeof.custom.CustomFontTextView
+                android:id="@+id/friendsFromTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Facebook"
+                android:textColor="@color/headerMainColor"
+                android:textSize="14dp"
+                app:fontName="@string/font_name_hind_medium" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/friends_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/connectWithFbButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="connect_with_facebook"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/friends_recycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/lightGreyColor" />
+
+                    <LinearLayout
+                        android:id="@+id/bottomLineTxtLl"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Click on  one of the 3 icons above to"
+                                android:textColor="@color/headerMainDarkColor"
+                                android:textSize="12dp"
+                                app:fontName="@string/font_name_hind_medium" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="find and invite friends to Meeof"
+                                android:textColor="@color/headerMainDarkColor"
+                                android:textSize="12dp"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/mightKnowLl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <com.meeof.meeof.custom.CustomFontTextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="You might know these people"
+                                android:textColor="@color/headerMainDarkColor"
+                                android:textSize="14dp"
+                                app:fontName="@string/font_name_hind_medium" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/mightKnowFriendsRv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="10dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

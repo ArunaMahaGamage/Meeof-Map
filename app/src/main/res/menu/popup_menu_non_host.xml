@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/interestItm"
+        android:title="Interested"/>
+
+    <item
+        android:id="@+id/ignoreItm"
+        android:title="Ignore Event"/>
+
+    <item
+        android:id="@+id/reportItm"
+        android:title="Report Event"/>
+</menu>
