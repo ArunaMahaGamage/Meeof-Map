@@ -146,6 +146,7 @@ public class LocationService extends Service implements LocationListener {
         if (speed < 6) {
             //some thing here
             broadcastEventsUpdate();
+            Log.e("if"," speed < 6");
         }
 
         Toast.makeText(getApplicationContext(),"kmph " + new String(String.valueOf(kmph)),
@@ -391,6 +392,7 @@ public class LocationService extends Service implements LocationListener {
     }
 
     private void broadcastEventsUpdate() {
+        Log.e("broadcastEventsUpdate","broadcastEventsUpdate");
         Intent intent = new Intent(Constant.UPDATE_EVENTS);
         LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
     }

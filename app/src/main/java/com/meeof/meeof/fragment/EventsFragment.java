@@ -648,6 +648,7 @@ public class EventsFragment extends BaseFragment implements View.OnClickListener
     private BroadcastReceiver updateEventsList = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+            Log.e("BroadcastReceiver","BroadcastReceiver");
             jobManager.addJobInBackground(new GetEventsWebJob(accessToken));
         }
     };
