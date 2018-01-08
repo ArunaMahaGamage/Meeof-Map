@@ -22,6 +22,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.birbit.android.jobqueue.JobManager;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.maps.model.LatLng;
 import com.meeof.meeof.MeeofApplication;
 import com.meeof.meeof.R;
@@ -38,14 +39,23 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.TimeZone;
+
+import static com.facebook.FacebookSdk.getApplicationContext;
 
 /**
  * Created by ransika on 7/27/2017.
  */
 
 public class LocationService extends Service implements LocationListener {
+    private FusedLocationProviderClient mFusedLocationClient;
+
     private LocationManager locationManager;
     private boolean isGPSEnabled;
     private boolean isNetworkEnabled;
@@ -59,6 +69,10 @@ public class LocationService extends Service implements LocationListener {
     private float mCurrentLongitude;
     private Geocoder geocoder;
     private String accessToken;
+
+    private Location first;
+    private Location second;
+    double distance;
 
 
     @Override
@@ -104,12 +118,52 @@ public class LocationService extends Service implements LocationListener {
         Log.d(TAG, "onLocationChanged lat" + location.getLatitude());
         Log.d(TAG, "onLocationChanged long" + location.getLongitude());
 
-        float speed = 0;
+    if (second == null && first != null) {
+            second = location;
+
+                distance = first.distanceTo(second);
+
+                double distancePerKM = distance/1000;
+
+                double firstTime = first.getTime();
+                double secondTime = second.getTime();
+
+                Log.e("first and second time",firstTime + "    " + secondTime);
+
+
+        double time = secondTime - firstTime;
+
+        Log.e("difference", String.valueOf(time));
+
+        time = time/1000;
+
+        double speed  = distance / (time);
+        double kmph = speed * 3.6;
+        Log.e("distance ", String.valueOf(distance));
+        Log.e("time", String.valueOf(time));
+        Log.e("kmph", String.valueOf(kmph));
+
+        if (speed < 6) {
+            //some thing here
+            broadcastEventsUpdate();
+        }
+
+        Toast.makeText(getApplicationContext(),"kmph " + new String(String.valueOf(kmph)),
+                Toast.LENGTH_LONG).show();
+        first = second;
+        second = null;
+
+        }else {
+            first = location;
+        }
 
 
 
-        Toast.makeText(getApplicationContext(),new String(String.valueOf(speed)),
-                Toast.LENGTH_SHORT).show();
+//        float speed = 0;
+//        speed = location.getTime();
+//
+//        Toast.makeText(getApplicationContext(),new String(String.valueOf(speed)),
+//                Toast.LENGTH_SHORT).show();
 
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -334,5 +388,10 @@ public class LocationService extends Service implements LocationListener {
             return true;
         }
         return false;
+    }
+
+    private void broadcastEventsUpdate() {
+        Intent intent = new Intent(Constant.UPDATE_EVENTS);
+        LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
     }
 }

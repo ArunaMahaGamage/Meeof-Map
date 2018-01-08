@@ -116,7 +116,7 @@ public class Constant {
 
     //Broadcast receivers
 
-    public static final long MIN_TIME_BW_UPDATES = 0;//0 seconds
+    public static final long MIN_TIME_BW_UPDATES = 1;//0 seconds
     public static final float MIN_DISTANCE_CHANGE_FOR_UPDATES = 0; //0 meters
 
     public static final String lastKnownLatitudeService = ""; //0 meters
